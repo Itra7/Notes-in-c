@@ -2,11 +2,6 @@
 #include <stdlib.h>
 #include <time.h>
 #include "structures.h"
-typedef struct value{
-
-	char buf[5000];
-
-}var;
 int store(){
 	char str[5000];
 	scanf("%[^'\n']s",str);
@@ -14,7 +9,7 @@ int store(){
 	 time_t current_time;
     char* c_time_string;
 
-    /* Obtain current time. */
+    /*current time. */
     current_time = time(NULL);
     c_time_string = ctime(&current_time);
 
